@@ -3,107 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dhivya A | Software Engineer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Dhivya A | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     html, body {
       height: 100%;
       font-family: 'Montserrat', sans-serif;
       background: url('background.avif') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
     }
+
+    body {
+      color: #222;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
     .overlay {
-      width: 100%;
       min-height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.25);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      padding: 40px 20px;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
+
     .card {
-      max-width: 900px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #fff;
-      margin: auto;
+      width: 100%;
+      max-width: 1100px;
+      background: rgba(255, 255, 255, 0.85);
+      color: #222;
       border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      padding: 40px 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     }
+
     .profile {
       text-align: center;
+      margin-bottom: 30px;
     }
+
     .profile img {
-      width: 130px;
-      height: 130px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #fff;
-      margin-bottom: 15px;
+      border: 4px solid #0077b6;
+      margin-bottom: 12px;
     }
+
     .profile h1 {
-      font-size: 2rem;
-      margin-bottom: 5px;
+      font-size: 2.2rem;
+      font-weight: 800;
     }
+
     .profile p {
-      margin: 5px 0;
+      margin: 4px 0;
+      font-weight: 500;
+      color: #333;
     }
-    h2 {
-      color: #90e0ef;
-      border-bottom: 1px solid #90e0ef;
-      padding-bottom: 6px;
-      margin-top: 30px;
-    }
-    .tags span {
-      display: inline-block;
-      background-color: rgba(0, 180, 216, 0.8);
-      color: white;
-      padding: 8px 14px;
-      margin: 5px 6px 0 0;
-      border-radius: 20px;
-      font-size: 0.85rem;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    ul li {
-      margin-bottom: 8px;
-    }
+
     a {
-      color: #ade8f4;
+      color: #0077b6;
       text-decoration: none;
+      font-weight: 600;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #0077b6;
+      border-bottom: 2px solid #00b4d8;
+      padding-bottom: 5px;
+      margin-top: 40px;
+      font-weight: 700;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .tags {
+      margin-top: 10px;
+    }
+
+    .tags span {
+      display: inline-block;
+      background-color: #00b4d8;
+      color: white;
+      padding: 8px 12px;
+      margin: 5px 6px 0 0;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
     .resume-download {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
     }
+
     .resume-download a {
       background-color: #0077b6;
       color: white;
-      padding: 12px 24px;
-      font-weight: bold;
+      padding: 14px 28px;
       border-radius: 6px;
-      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
     }
+
     .resume-download a:hover {
       background-color: #023e8a;
     }
+
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #ddd;
-      margin-top: 40px;
+      padding: 30px 20px 10px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 25px 20px;
+      }
+
+      .profile h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
@@ -111,9 +158,9 @@
   <div class="overlay">
     <div class="card">
       <div class="profile">
-        <img src="my-passport-photo.jpg" alt="Dhivya A" />
+        <img src="my-passport-photo.jpg" alt="Dhivya A">
         <h1>Dhivya A</h1>
-        <p>Software Engineer | Perl | Automation | Healthcare Systems</p>
+        <p>Software Engineer | Perl | Automation | Healthcare</p>
         <p>
           <a href="mailto:dhivya270799@gmail.com">dhivya270799@gmail.com</a> |
           <a href="https://www.linkedin.com/in/dhivya-a-1b8b7017b" target="_blank">LinkedIn</a>
@@ -122,7 +169,7 @@
 
       <section>
         <h2>About Me</h2>
-        <p>4.5+ years of experience in backend automation, Perl development, and healthcare billing systems. Currently contributing to Athenahealth workflows at CitiusTech.</p>
+        <p>Experienced Software Engineer with 4.5+ years in Perl development, automation scripting, and healthcare billing. Currently working at CitiusTech for Athenahealth client, solving claim flow and data pipeline issues using Perl, SQL, and backend logic.</p>
       </section>
 
       <section>
@@ -130,7 +177,7 @@
         <div class="tags">
           <span>Perl</span><span>Python</span><span>SQL</span><span>MySQL</span><span>Regex</span>
           <span>Selenium</span><span>BeautifulSoup</span><span>Linux</span><span>Git</span><span>FTP</span>
-          <span>Jira</span><span>Healthcare Billing</span><span>EDI 837/835</span>
+          <span>Healthcare Billing</span><span>Jira</span><span>EDI 837/835</span>
         </div>
       </section>
 
@@ -138,18 +185,20 @@
         <h2>Experience</h2>
         <h3>CitiusTech – Software Engineer (Dec 2023 – Present)</h3>
         <ul>
-          <li>Automated workflows for claims processing using Perl & SQL</li>
-          <li>Enhanced performance and accuracy in billing systems</li>
+          <li>Automated claim workflows using Perl and SQL scripts.</li>
+          <li>Collaborated with QA & BA teams to resolve production issues in healthcare billing.</li>
         </ul>
+
         <h3>Straive – Junior Executive (Dec 2021 – Nov 2023)</h3>
         <ul>
-          <li>Scraped journal metadata with Python & BeautifulSoup</li>
-          <li>Deployed automated data pipelines for MySQL & FTP</li>
+          <li>Built scraping automation for academic journals using BeautifulSoup & Perl.</li>
+          <li>Integrated workflows with FTP and MySQL for real-time data handling.</li>
         </ul>
+
         <h3>Mobius – Trainee Software Engineer (Jan 2021 – Dec 2021)</h3>
         <ul>
-          <li>Built scraping tools for e-commerce platforms</li>
-          <li>Enabled price monitoring and alerting logic</li>
+          <li>Scraped e-commerce pricing data using Regex, Selenium, and automated scripts.</li>
+          <li>Improved delivery and reliability of datasets under tight deadlines.</li>
         </ul>
       </section>
 
@@ -174,11 +223,11 @@
       <div class="resume-download">
         <a href="Dhivya_cv.pdf" download>📄 Download My Resume</a>
       </div>
+
+      <footer>
+        © 2025 Dhivya A · All rights reserved.
+      </footer>
     </div>
   </div>
-
-  <footer>
-    © 2025 Dhivya A · All rights reserved.
-  </footer>
 </body>
 </html>

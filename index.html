@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dhivya A | Software Engineer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Dhivya A | Professional Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,116 +12,121 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Inter', sans-serif;
-      background: #f9f9f9;
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f7fa;
       color: #333;
     }
     header {
-      background: #004080;
-      color: #fff;
-      padding: 40px 20px;
+      background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      color: white;
       text-align: center;
+      padding: 80px 20px 40px;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 60px 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 20px;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.6rem;
       margin-bottom: 10px;
     }
     header p {
       font-size: 1.1rem;
+      margin: 4px 0;
     }
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+      border-radius: 10px;
     }
     section {
       margin-bottom: 40px;
     }
     h2 {
-      border-left: 4px solid #004080;
-      padding-left: 10px;
-      margin-bottom: 15px;
       color: #004080;
+      border-bottom: 2px solid #00b4d8;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
     }
     ul {
-      list-style: none;
-      padding-left: 0;
+      padding-left: 20px;
     }
-    li {
-      margin-bottom: 8px;
+    ul li {
+      margin-bottom: 10px;
     }
-    .tag {
+    .tags span {
       display: inline-block;
-      background: #004080;
-      color: white;
-      padding: 6px 10px;
-      margin: 5px 5px 0 0;
-      border-radius: 5px;
+      background-color: #00b4d8;
+      color: #fff;
+      padding: 8px 12px;
+      margin: 6px 6px 0 0;
+      border-radius: 20px;
       font-size: 0.9rem;
     }
-    a {
-      color: #004080;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .resume {
+    .resume-download {
       text-align: center;
       margin-top: 30px;
     }
-    .resume a {
-      background: #004080;
+    .resume-download a {
+      background-color: #0077b6;
       color: #fff;
-      padding: 12px 20px;
-      border-radius: 6px;
-      font-weight: bold;
+      padding: 14px 28px;
+      border-radius: 8px;
       text-decoration: none;
+      font-weight: bold;
     }
-    .resume a:hover {
-      background: #0066cc;
+    .resume-download a:hover {
+      background-color: #023e8a;
     }
     footer {
       text-align: center;
       padding: 20px;
-      background: #eaeaea;
+      background: #e3eef8;
       font-size: 0.9rem;
+      color: #555;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Dhivya A</h1>
-  <p>Software Engineer | Perl Developer | Automation Expert | Healthcare Systems</p>
-  <p><a href="mailto:dhivya270799@gmail.com" style="color: #aad4ff;">dhivya270799@gmail.com</a> |
-     <a href="https://www.linkedin.com/in/dhivya-a-1b8b7017b" target="_blank" style="color: #aad4ff;">LinkedIn</a>
-  </p>
+  <div class="overlay">
+    <img src="my-passport-photo.jpg" alt="Dhivya A" class="profile-pic" />
+    <h1>Dhivya A</h1>
+    <p>Software Engineer | Perl Developer | Automation Specialist</p>
+    <p>
+      <a href="mailto:dhivya270799@gmail.com" style="color: #90e0ef;">dhivya270799@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/dhivya-a-1b8b7017b" target="_blank" style="color: #90e0ef;">LinkedIn</a>
+    </p>
+  </div>
 </header>
 
 <div class="container">
-
   <section>
     <h2>About Me</h2>
-    <p>Experienced software engineer with over 4.5 years of expertise in Perl development, automation scripting, and healthcare domain workflows. Known for building reliable backend systems and automation pipelines. Currently supporting Athenahealth through CitiusTech.</p>
+    <p>Experienced Software Engineer with over 4.5 years of expertise in Perl development, automation scripting, and healthcare claim workflows. Currently supporting Athenahealth as part of CitiusTech, delivering robust backend systems and automation pipelines.</p>
   </section>
 
   <section>
     <h2>Skills</h2>
-    <div>
-      <span class="tag">Perl</span>
-      <span class="tag">Python</span>
-      <span class="tag">SQL</span>
-      <span class="tag">MySQL</span>
-      <span class="tag">Regex</span>
-      <span class="tag">Selenium</span>
-      <span class="tag">BeautifulSoup</span>
-      <span class="tag">Linux</span>
-      <span class="tag">Git</span>
-      <span class="tag">FTP</span>
-      <span class="tag">Jira</span>
-      <span class="tag">Healthcare Billing</span>
-      <span class="tag">EDI 837/835</span>
+    <div class="tags">
+      <span>Perl</span><span>Python</span><span>SQL</span><span>Regex</span><span>MySQL</span>
+      <span>Selenium</span><span>BeautifulSoup</span><span>Linux</span><span>Git</span><span>FTP</span>
+      <span>Healthcare Billing</span><span>Jira</span><span>EDI 837/835</span>
     </div>
   </section>
 
@@ -130,30 +135,28 @@
     <h3>CitiusTech – Software Engineer (Dec 2023 – Present)</h3>
     <ul>
       <li>Automated claim processing for Athenahealth using Perl</li>
-      <li>Reduced billing error rates by optimizing backend scripts</li>
-      <li>Built MySQL data loaders and reusable Perl modules</li>
+      <li>Reduced billing error rates and optimized backend systems</li>
     </ul>
 
     <h3>Straive – Junior Executive (Dec 2021 – Nov 2023)</h3>
     <ul>
-      <li>Created automation scripts to scrape metadata from journals</li>
-      <li>Used BeautifulSoup and proxy logic to handle publisher blocks</li>
-      <li>Managed data workflows using FTP and MySQL</li>
+      <li>Developed automation scripts for metadata extraction and journal scraping</li>
+      <li>Implemented proxy logic and managed database workflows</li>
     </ul>
 
     <h3>Mobius – Trainee Software Engineer (Jan 2021 – Dec 2021)</h3>
     <ul>
-      <li>Scraped structured data from e-commerce sites</li>
-      <li>Built generic scraping modules for scalability</li>
+      <li>Scraped e-commerce data and automated data comparison tasks</li>
+      <li>Built reusable scraping modules and alerting systems</li>
     </ul>
   </section>
 
   <section>
     <h2>Education</h2>
     <ul>
-      <li><strong>B.E. in Computer Science</strong> – 84%, Vivekanandha College (2016–2020)</li>
-      <li><strong>HSC</strong> – 81.6%, GHSS (2015–2016)</li>
-      <li><strong>SSLC</strong> – 91.2%, GHSS (2013–2014)</li>
+      <li><strong>B.E. in Computer Science</strong> – Vivekanandha College (84%)</li>
+      <li><strong>HSC</strong> – GHSS, Salem (81.6%)</li>
+      <li><strong>SSLC</strong> – GHSS, Salem (91.2%)</li>
     </ul>
   </section>
 
@@ -162,18 +165,17 @@
     <ul>
       <li>🏆 Going the Extra Mile Award – CitiusTech (2025)</li>
       <li>⭐ 5-Star Performance – Straive (2022–2023)</li>
-      <li>🥇 Outstanding Contributor – Mobius (2021)</li>
+      <li>🎖 Outstanding Contributor – Mobius (2021)</li>
     </ul>
   </section>
 
-  <section class="resume">
-    <h2>Download Resume</h2>
-    <a href="./Dhivya_cv.pdf" download>📄 Download My Resume</a>
-  </section>
+  <div class="resume-download">
+    <a href="Dhivya_cv.pdf" download>📄 Download My Resume</a>
+  </div>
 </div>
 
 <footer>
-  © 2025 Dhivya A. All rights reserved.
+  © 2025 Dhivya A · Designed with passion and professionalism
 </footer>
 
 </body>
